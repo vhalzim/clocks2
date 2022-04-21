@@ -25,8 +25,8 @@ function App() { return(
       </div>
     </Slider>
 
-    <button type="button" className="absolute right-3 text-3xl top-1/2 bg-dark-teal rounded-full shadow-[#094240]  shadow-md px-1"><FontAwesomeIcon icon={faArrowRight}/></button>
-    <button type="button" className="absolute left-3 text-3xl top-1/2 bg-dark-teal rounded-full shadow-[#094240]  shadow-md  px-1 " ><FontAwesomeIcon icon={faArrowLeft}/></button>
+    <button type="button" className="absolute right-3 text-xl lg:text-3xl top-1/2 bg-dark-teal rounded-full shadow-[#094240]  shadow-md px-1"><FontAwesomeIcon icon={faArrowRight}/></button>
+    <button type="button" className="absolute left-3 text-xl lg:text-3xl top-1/2 bg-dark-teal rounded-full shadow-[#094240]  shadow-md  px-1 " ><FontAwesomeIcon icon={faArrowLeft}/></button>
  
   
 

@@ -96,16 +96,16 @@ function handleLapClick(){
 
   return (
     <div className="flex flex-col items-center ">
-          <h1 className="text-9xl" > {clokedHours} : {clokedMinutes} : {clokedSeconds} : {clokedMseconds} </h1>
+          <h1 className="text-4xl lg:text-9xl" > {clokedHours} : {clokedMinutes} : {clokedSeconds} : {clokedMseconds} </h1>
          
-          <div className="grid grid-cols-3 gap-44 w-2/3 mt-5 text-xl">
+          <div className="grid grid-cols-3  gap-2 lg:gap-44 w-2/3 mt-5 text-xl">
             {resetButton === true && (<button className=" bg-ligth-green rounded-full shadow-[#094240]  shadow-md hover:shadow-none" onClick={HandleResetButton}><FontAwesomeIcon icon={faArrowRotateLeft}/></button>) } 
             <button className="col-start-2 col-end-3 bg-dark-teal rounded-full shadow-[#094240]  shadow-md hover:shadow-none hover:bg-[#37a6a2]" onClick={handlePlayClick}>{buttonState === true? <FontAwesomeIcon icon={faPause}/> : <FontAwesomeIcon icon={faPlay}/>}</button> 
             {buttonState === true && (<button type="button" className=" bg-ligth-green rounded-full shadow-[#094240]  shadow-md hover:shadow-none " onClick={handleLapClick}><FontAwesomeIcon icon={faStopwatch}/></button>)}
           </div>
 
-          <div className="flex  w-48  max-h-[8rem] my-5 text-clip overflow-hidden overflow-y-auto ">
-            <ul className="text-2xl">
+          <div className="flex  w-48  max-h-[8rem] my-5 text-clip overflow-hidden overflow-y-auto justify-center">
+            <ul className="text-xl lg:text-2xl ">
                 {laps.map(lap => {
                    var clokedLapMseconds = cloker (lap.ms)
                    var clokedLapSeconds = cloker(lap.s)

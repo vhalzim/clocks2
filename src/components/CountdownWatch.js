@@ -127,22 +127,22 @@ function timeSetter(){
   
    return (
     <div className="flex flex-col items-center ">
-       {enabled ? (<h1 className="text-9xl"> {clokedDays} : {clokedHours} : {clokedMinutes} : {clokedSeconds} </h1>):(
-        <div className="text-7xl">
-          <input className="bg-grey-blue max-w-[9rem] text-9xl text-right ml-4 focus:outline-none " onChange={valueInput} value={timeInput.d} name="days" min="00"  placeholder="00d" />d : 
-          <input className="bg-grey-blue max-w-[9rem] text-9xl text-right ml-4 focus:outline-none " onChange={valueInput} value={timeInput.h} name="hours"  placeholder="00" maxLength="2"/>h : 
-          <input className="bg-grey-blue max-w-[9rem] text-9xl text-right ml-4 focus:outline-none " onChange={valueInput} value={timeInput.m} name="minutes"  placeholder="00" maxLength="2"/>m : 
-          <input className="bg-grey-blue max-w-[9rem] text-9xl text-right ml-4 focus:outline-none " onChange={valueInput} value={timeInput.s} name="seconds"   placeholder="00" maxLength="2"/>s
+       {enabled ? (<h1 className="text-4xl lg:text-9xl"> {clokedDays} : {clokedHours} : {clokedMinutes} : {clokedSeconds} </h1>):(
+        <div className="text-xl lg:text-9xl">
+          <input className="bg-grey-blue max-w-[3rem] text-4xl lg:text-9xl lg:max-w-[9rem] text-right ml-4  focus:outline-none " onChange={valueInput} value={timeInput.d} name="days" min="00"  placeholder="00d" />d : 
+          <input className="bg-grey-blue max-w-[3rem] text-4xl lg:text-9xl lg:max-w-[9rem] text-right ml-4  focus:outline-none " onChange={valueInput} value={timeInput.h} name="hours"  placeholder="00" maxLength="2"/>h : 
+          <input className="bg-grey-blue max-w-[3rem] text-4xl lg:text-9xl lg:max-w-[9rem] text-right ml-4  focus:outline-none " onChange={valueInput} value={timeInput.m} name="minutes"  placeholder="00" maxLength="2"/>m : 
+          <input className="bg-grey-blue max-w-[3rem] text-4xl lg:text-9xl lg:max-w-[9rem] text-right ml-4  focus:outline-none " onChange={valueInput} value={timeInput.s} name="seconds"   placeholder="00" maxLength="2"/>s
         </div>
        )}
 
     
       {enabled ? (
-      <div className="grid grid-cols-2 gap-60 w-2/4 mt-5 text-xl">
+      <div className="grid grid-cols-2 gap-4 lg:gap-60 w-2/4 mt-5 text-xl">
         <button className="bg-dark-teal rounded-full shadow-[#094240]  shadow-md hover:shadow-none hover:bg-[#37a6a2]" type="button" onClick={() => setButtonState(!buttonState)}>{buttonState === true? <FontAwesomeIcon icon={faPause}/> : <FontAwesomeIcon icon={faPlay}/>}</button>
         <button className="bg-ligth-green rounded-full shadow-[#094240]  shadow-md hover:shadow-none" type="button" onClick={handleResetClick}><FontAwesomeIcon icon={faArrowRotateLeft}/></button>
       </div>
-      ) : (<button className="text-xl w-28 bg-dark-teal rounded-full shadow-[#094240]  shadow-md hover:shadow-none hover:bg-[#37a6a2]" type="button" onClick={handleClick}><FontAwesomeIcon icon={faPlay}/></button>) }
+      ) : (<button className="text-xl mt-3 w-28 bg-dark-teal rounded-full shadow-[#094240]  shadow-md hover:shadow-none hover:bg-[#37a6a2]" type="button" onClick={handleClick}><FontAwesomeIcon icon={faPlay}/></button>) }
        
 
        

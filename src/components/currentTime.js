@@ -36,14 +36,14 @@ setInterval(clock, 1000)
   return (
     <div className="flex flex-col items-center pb-40">
  
-      <h1  className="text-9xl" >{time}</h1> 
+      <h1  className="text-6xl lg:text-9xl" >{time}</h1> 
   
       <button className="flex bg-dark-teal mt-5 w-7 h-7 justify-center items-center text-2xl rounded-full shadow-[#094240]  shadow-md hover:shadow-none hover:bg-[#37a6a2]" type="button" onClick={handleClick}>
       <FontAwesomeIcon icon={faPlus}/>
     
       </button>
-      <div className="flex  w-40  max-h-[8rem] my-5 text-clip overflow-hidden overflow-y-auto ">
-        <ul className="text-2xl">
+      <div className="flex  w-40  max-h-[8rem] my-5 text-clip overflow-hidden overflow-y-auto justify-center">
+        <ul className="text-xl lg:text-2xl">
           {timeList.map(timeItem => {
               return <li>{timeItem}</li>
             }
