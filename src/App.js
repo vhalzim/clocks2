@@ -12,7 +12,7 @@ import { faArrowLeft,faArrowRight } from '@fortawesome/free-solid-svg-icons'
 function App() { return(
   <div className=" relative flex  items-start justify-center w-screen h-screen bg-grey-blue text-lime font-sans">
 
-    <Slider prevArrow={<FontAwesomeIcon icon={faArrowRight}/>} nextArrow={<FontAwesomeIcon icon={faArrowLeft}/>} dots className="py-60  overflow-y-visible  w-screen h-screen bg-grey-blue text-lime font-sans">
+    <Slider prevArrow={<FontAwesomeIcon icon={faArrowRight}/>} nextArrow={<FontAwesomeIcon icon={faArrowLeft}/>} dots className=" mt-52 overflow-y-visible  w-screen h-1/2 bg-grey-blue text-lime font-sans">
       <div>
 
       <CurrenTime />
